@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+    appearance: none ;
+  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fundo preto caso o vídeo demore a carregar */
+    min-height: 100vh;
+}
+
+/* Configuração para o vídeo ocupar a tela toda no fundo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Garante que o vídeo cubra a tela sem distorcer */
+    z-index: -1;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 10px ;
+}
+
+main {
+    background: #83eb5b;
+    width: 375px;
+    margin: 20px auto 40px;
+    padding: 44px 24px 23px;
+    border-radius: 20px;
+
+}
+
+label {
+    
+    font-size: 14px;
+    font-weight: 600;
+    color: #00110b;
+    margin-bottom: 10px;
+
+}
+select,input{
+    width: 100%;
+    height: 48px;
+    padding-left: 10px;
+    border: 1px solid #bbbbbb;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555;
+    cursor: pointer;
+    
+}
+input::placeholder{
+    color: #555555
+}   
+
+
+
+
+button{
+    width: 100%;
+    height: 48px;
+    background: #0c3404;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button:active{
+    opacity: 0.6;
+}
+
+
+section{
+    border: 1px solid #0c3404;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c8e4bd;
+}
+
+.arrow-img {
+    margin: 15px 0;
+    height: 50px;
+
+}
+
+.currency-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.currency {
+    font-size: 16px;
+    color: #777777;
+}
+.value,.value-2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #555555;
+}
